@@ -12,11 +12,11 @@ public class Repository {
 
     private  Repository() {
         todoList = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            Todo todo = new Todo();
-            todo.setTitle("todo"+i);
-            todoList.add(todo);
-        }
+//        for (int i = 0; i < 10; i++) {
+//            Todo todo = new Todo();
+//            todo.setTitle("todo"+i);
+//            todoList.add(todo);
+//        }
     }
 
     public static Repository getInstance(){
@@ -31,12 +31,12 @@ public class Repository {
     }
 
     public Todo getTodoByID(UUID id){
-        for(Todo item : todoList){
-            if(item.getId() == id){
-                return item;
-            }
-        }
-        return null;
+//        for(Todo item : todoList){
+//            if(item.getId() == id){
+//                return item;
+//            }
+//        }
+       return null;
     }
 
     public void insert(Todo todo){
@@ -44,16 +44,16 @@ public class Repository {
     }
 
     public void delete(UUID id){
-        for(Todo item : todoList){
-            if(item.getId() == id){
-                todoList.remove(item);
-            }
-        }
+//        for(Todo item : todoList){
+//            if(item.getId() == id){
+//                todoList.remove(item);
+//            }
+//        }
     }
 
     public void update(Todo todo){
-        Todo oldTodo = getTodoByID(todo.getId());
-        oldTodo.setTitle(todo.getTitle());
-        oldTodo.setDescription(todo.getDescription());
+//        Todo oldTodo = getTodoByID(todo.getId());
+//        oldTodo.setTitle(todo.getTitle());
+//        oldTodo.setDescription(todo.getDescription());
     }
 }
