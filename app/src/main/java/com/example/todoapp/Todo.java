@@ -6,7 +6,6 @@ import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 import java.util.Date;
-import java.util.UUID;
 
 @Entity(tableName = "todos")
 public class Todo {
